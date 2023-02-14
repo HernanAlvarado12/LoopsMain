@@ -70,8 +70,8 @@ module.exports = {
         }
       },
       backgroundImage: {
-        'header': "url('/src/assets/mobile/hero.jpg')",
-        'header-sm': "url('/src/assets/desktop/hero.jpg')"
+        'header': "url('../assets/hero.jpg')",
+        'header-sm': "url('../assets/desktop/hero.jpg')"
       }
     },
   },

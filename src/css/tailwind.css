@@ -770,11 +770,6 @@ body::-webkit-scrollbar-thumb {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.skew-x-0 {
-  --tw-skew-x: 0deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .scale-x-0 {
   --tw-scale-x: 0;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -895,7 +890,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .bg-header {
-  background-image: url('/src/assets/mobile/hero.jpg');
+  background-image: url('../assets/hero.jpg');
 }
 
 .bg-cover {
@@ -1338,6 +1333,10 @@ body::-webkit-scrollbar-thumb {
   .sm\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
+  .sm\:bg-header-sm {
+    background-image: url('../assets/desktop/hero.jpg');
   }
 
   .sm\:p-4 {
