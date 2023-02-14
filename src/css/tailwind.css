@@ -594,18 +594,6 @@ body::-webkit-scrollbar-thumb {
   margin-top: 4rem;
 }
 
-.mt-7 {
-  margin-top: 1.75rem;
-}
-
-.mt-50 {
-  margin-top: 50%;
-}
-
-.mt-60 {
-  margin-top: 15rem;
-}
-
 .mt-52 {
   margin-top: 13rem;
 }
@@ -650,20 +638,12 @@ body::-webkit-scrollbar-thumb {
   height: calc(100% - 9rem);
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .max-h-80 {
   max-height: 80vh;
 }
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.min-h-full {
-  min-height: 100%;
 }
 
 .w-14 {
@@ -686,28 +666,8 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
 }
 
-.translate-x-\[-8rem\] {
-  --tw-translate-x: -8rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-\[-10rem\] {
-  --tw-translate-x: -10rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .translate-x-\[-12rem\] {
   --tw-translate-x: -12rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.skew-x-12 {
-  --tw-skew-x: 12deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.skew-x-\[50deg\] {
-  --tw-skew-x: 50deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -786,7 +746,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .bg-header {
-  background-image: url('/src/assets/mobile/hero.jpg');
+  background-image: url('../src/assets/mobile/hero.jpg');
 }
 
 .bg-cover {
@@ -863,20 +823,8 @@ body::-webkit-scrollbar-thumb {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.mix-blend-normal {
-  mix-blend-mode: normal;
-}
-
 .mix-blend-difference {
   mix-blend-mode: difference;
-}
-
-.duration-500 {
-  transition-duration: 500ms;
-}
-
-.duration-\[2s\] {
-  transition-duration: 2s;
 }
 
 .duration-1000 {
@@ -918,11 +866,6 @@ body::-webkit-scrollbar-thumb {
   left: 0px;
 }
 
-.after\:top-0::after {
-  content: var(--tw-content);
-  top: 0px;
-}
-
 .after\:h-0::after {
   content: var(--tw-content);
   height: 0px;
@@ -931,11 +874,6 @@ body::-webkit-scrollbar-thumb {
 .after\:h-0\.2::after {
   content: var(--tw-content);
   height: 0.2rem;
-}
-
-.after\:h-full::after {
-  content: var(--tw-content);
-  height: 100%;
 }
 
 .after\:w-0::after {
@@ -948,11 +886,6 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
 }
 
-.after\:origin-left::after {
-  content: var(--tw-content);
-  transform-origin: left;
-}
-
 .after\:scale-x-0::after {
   content: var(--tw-content);
   --tw-scale-x: 0;
@@ -963,17 +896,6 @@ body::-webkit-scrollbar-thumb {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.after\:bg-black::after {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.after\:mix-blend-difference::after {
-  content: var(--tw-content);
-  mix-blend-mode: difference;
 }
 
 .after\:transition-all::after {
@@ -996,26 +918,6 @@ body::-webkit-scrollbar-thumb {
 .after\:content-\[\'\'\]::after {
   --tw-content: '';
   content: var(--tw-content);
-}
-
-.hover\:translate-x-0:hover {
-  --tw-translate-x: 0px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:bg-black:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-red-600:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:after\:w-full:hover::after {
@@ -1044,11 +946,6 @@ body::-webkit-scrollbar-thumb {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.group:hover .group-hover\:bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
 .group:hover .group-hover\:font-semibold {
   font-weight: 600;
 }
@@ -1060,10 +957,6 @@ body::-webkit-scrollbar-thumb {
 
 .group:hover .group-hover\:opacity-30 {
   opacity: 0.3;
-}
-
-.group:hover .group-hover\:duration-500 {
-  transition-duration: 500ms;
 }
 
 .group:hover .group-hover\:duration-700 {
@@ -1121,10 +1014,6 @@ body::-webkit-scrollbar-thumb {
     margin-left: auto;
   }
 
-  .sm\:block {
-    display: block;
-  }
-
   .sm\:flex {
     display: flex;
   }
@@ -1139,10 +1028,6 @@ body::-webkit-scrollbar-thumb {
 
   .sm\:aspect-auto {
     aspect-ratio: auto;
-  }
-
-  .sm\:h-9 {
-    height: 9rem;
   }
 
   .sm\:h-14 {
@@ -1167,10 +1052,6 @@ body::-webkit-scrollbar-thumb {
 
   .sm\:w-85 {
     width: 85%;
-  }
-
-  .sm\:w-auto {
-    width: auto;
   }
 
   .sm\:w-full {
@@ -1218,6 +1099,11 @@ body::-webkit-scrollbar-thumb {
          column-gap: 2rem;
   }
 
+  .sm\:gap-x-4 {
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
+  }
+
   .sm\:gap-y-2 {
     row-gap: 2rem;
   }
@@ -1226,13 +1112,12 @@ body::-webkit-scrollbar-thumb {
     row-gap: 5rem;
   }
 
-  .sm\:gap-x-4 {
-    -moz-column-gap: 4rem;
-         column-gap: 4rem;
-  }
-
   .sm\:justify-self-end {
     justify-self: end;
+  }
+
+  .sm\:bg-transparent {
+    background-color: transparent;
   }
 
   .sm\:bg-white {
@@ -1240,8 +1125,8 @@ body::-webkit-scrollbar-thumb {
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
-  .sm\:bg-transparent {
-    background-color: transparent;
+  .sm\:bg-header-sm {
+    background-image: url('../src/assets/desktop/hero.jpg');
   }
 
   .sm\:p-4 {
