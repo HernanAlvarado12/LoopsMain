@@ -25,9 +25,22 @@
         
         <header>
             <nav class ="w-full max-h-80 flex flex-col aspect-nav relative bg-header bg-cover bg-no-repeat">
-                <figure class ="w-90 h-9 mx-auto flex items-center justify-between sm:w-85">
-                    <img src ="./src/assets/logo.svg" alt ="icon logo">
-                    <img class ="sm:hidden" src ="./src/assets/hamburger.svg" alt ="icon menu">
+                <figure class ="w-90 h-9 mx-auto flex items-center justify-between sm:h-14">
+                    <img class ="sm:hidden" src ="./src/assets/logo.svg" alt ="icon logo" loading ="lazy" draggable ="false">
+                    <img class ="sm:hidden" src ="./src/assets/hamburger.svg" alt ="icon menu" loading ="lazy" draggable ="false">
+                    <menu class ="w-full min-h-screen hidden absolute top-0 left-0 bg-black sm:w-full sm:h-full sm:min-h-0 sm:flex sm:items-center sm:justify-between sm:relative sm:bg-transparent">
+                        <figure class ="w-90 h-9 mx-auto flex items-center justify-between">
+                            <img class ="" src ="./src/assets/logo.svg" alt ="icon logo" loading ="lazy" draggable ="false">
+                            <img class ="sm:hidden" src ="./src/assets/close.svg" alt ="icon menu" loading ="lazy" draggable ="false">
+                        </figure>
+                        <ul class ="w-90 mx-auto mt-52 flex flex-col gap-y-2 sm:m-0 sm:flex-row sm:justify-end sm:gap-x-4">
+                            <li><a class ="text-white text-base uppercase sm:text-md sm:capitalize" href ="#">about</a></li>
+                            <li><a class ="text-white text-base uppercase sm:text-md sm:capitalize" href ="#">careers</a></li>
+                            <li><a class ="text-white text-base uppercase sm:text-md sm:capitalize" href ="#">events</a></li>
+                            <li><a class ="text-white text-base uppercase sm:text-md sm:capitalize" href ="#">products</a></li>
+                            <li><a class ="text-white text-base uppercase sm:text-md sm:capitalize" href ="#">support</a></li>
+                        </ul>
+                    </menu>
                 </figure>
                 <div class ="h-nav grid place-content-center sm:w-85 sm:mx-auto sm:justify-start">
                     <h1 class ="w-[33rem] py-2 px-3 text-white text-xl uppercase border border-white sm:t-sm">Immersive experiences that deliver</h1>
@@ -39,7 +52,7 @@
             <section class ="w-90 mx-auto my-8 sm:w-85 sm:my-14 sm:flex sm:relative">
                 <picture class ="sm:w-80">
                     <source media ="(min-width: 900px)" srcset ="./src/assets/desktop/interactive.jpg">
-                    <img class ="w-full aspect-video" src ="./src/assets/mobile/interactive.jpg" alt ="picture">
+                    <img class ="w-full aspect-video" src ="./src/assets/mobile/interactive.jpg" alt ="picture" loading ="lazy" draggable ="false">
                 </picture>
                 <article class ="text-center sm:w-50 sm:p-4 sm:pb-0 sm:absolute sm:bottom-0 sm:right-0 sm:shadow-sm sm:bg-white">
                     <h2 class ="mt-4 mb-1 text-gray-100 text-base uppercase">the leader in interactive vr</h2>
@@ -54,82 +67,100 @@
             <section class ="w-90 mx-auto sm:w-85 sm:mb-14 sm:grid sm:grid-cols-2 sm:gap-y-5">    
                 <h2 class ="mb-3 text-gray-100 text-base text-center uppercase sm:m-0 sm:order-1 sm:text-start">Out creations</h2>
                 <section class ="flex flex-col items-center gap-y-3 sm:grid sm:grid-cols-4 sm:gap-2 sm:col-span-2">
-                    <figure class ="w-full aspect-mn relative sm:aspect-auto">
+                    <figure class ="group w-full aspect-mn relative sm:aspect-auto sm:cursor-pointer">
                         <picture>
                             <source media ="(min-width: 900px)" srcset ="./src/assets/desktop/deep-earth.jpg">
-                            <img class ="h-full xl:w-full" src ="./src/assets/mobile/deep-earth.jpg" alt ="picture">
+                            <img class ="h-full group-hover:opacity-30 xl:w-full" src ="./src/assets/mobile/deep-earth.jpg" alt ="picture" loading ="lazy" draggable ="false">
                         </picture>
-                        <figcaption class ="w-14 text-white text-lg uppercase absolute bottom-1 left-2">deep earth</figcaption>
+                        <figcaption class ="w-14 text-white text-lg uppercase absolute bottom-1 left-2 group-hover:text-black group-hover:font-semibold">deep earth</figcaption>
                     </figure>
-                    <figure class ="w-full aspect-mn relative sm:aspect-auto">
+                    <figure class ="group w-full aspect-mn relative sm:aspect-auto sm:cursor-pointer">
                         <picture>
                             <source media ="(min-width: 900px)" srcset ="./src/assets/desktop/night-arcade.jpg">
-                            <img class ="h-full xl:w-full" src ="./src/assets/mobile/night-arcade.jpg" alt ="picture">
+                            <img class ="h-full group-hover:opacity-30 xl:w-full" src ="./src/assets/mobile/night-arcade.jpg" alt ="picture" loading ="lazy" draggable ="false">
                         </picture>
-                        <figcaption class ="w-14 text-white text-lg uppercase absolute bottom-1 left-2">night arcade</figcaption>
+                        <figcaption class ="w-14 text-white text-lg uppercase absolute bottom-1 left-2 group-hover:text-black group-hover:font-semibold">night arcade</figcaption>
                     </figure>
-                    <figure class ="w-full aspect-mn relative sm:aspect-auto">
+                    <figure class ="group w-full aspect-mn relative sm:aspect-auto sm:cursor-pointer">
                         <picture>
                             <source media ="(min-width: 900px)" srcset ="./src/assets/desktop/soccer-team.jpg">
-                            <img class ="h-full xl:w-full" src ="./src/assets/mobile/soccer-team.jpg" alt ="picture">
+                            <img class ="h-full group-hover:opacity-30 xl:w-full" src ="./src/assets/mobile/soccer-team.jpg" alt ="picture" loading ="lazy" draggable ="false">
                         </picture>
-                        <figcaption class ="w-14 text-white text-lg uppercase absolute bottom-1 left-2">soccer team vr</figcaption>
+                        <figcaption class ="w-14 text-white text-lg uppercase absolute bottom-1 left-2 group-hover:text-black group-hover:font-semibold">soccer team vr</figcaption>
                     </figure>
-                    <figure class ="w-full aspect-mn relative sm:aspect-auto">
+                    <figure class ="group w-full aspect-mn relative sm:aspect-auto sm:cursor-pointer">
                         <picture>
                             <source media ="(min-width: 900px)" srcset ="./src/assets/desktop/grid.jpg">
-                            <img class ="h-full xl:w-full" src ="./src/assets/mobile/grid.jpg" alt ="picture">
+                            <img class ="h-full group-hover:opacity-30 xl:w-full" src ="./src/assets/mobile/grid.jpg" alt ="picture" loading ="lazy" draggable ="false">
                         </picture>
-                        <figcaption class ="w-14 text-white text-lg uppercase absolute bottom-1 left-2">the grid</figcaption>
+                        <figcaption class ="w-14 text-white text-lg uppercase absolute bottom-1 left-2 group-hover:text-black group-hover:font-semibold">the grid</figcaption>
                     </figure>
-                    <figure class ="w-full aspect-mn relative sm:aspect-auto">
+                    <figure class ="group w-full aspect-mn relative sm:aspect-auto sm:cursor-pointer">
                         <picture>
                             <source media ="(min-width: 900px)" srcset ="./src/assets/desktop/from-above.jpg">
-                            <img class ="h-full xl:w-full" src ="./src/assets/mobile/from-above.jpg" alt ="picture">
+                            <img class ="h-full group-hover:opacity-30 xl:w-full" src ="./src/assets/mobile/from-above.jpg" alt ="picture" loading ="lazy" draggable ="false">
                         </picture>
-                        <figcaption class ="w-14 text-white text-lg uppercase absolute bottom-1 left-2">from up above vr</figcaption>
+                        <figcaption class ="w-14 text-white text-lg uppercase absolute bottom-1 left-2 group-hover:text-black group-hover:font-semibold">from up above vr</figcaption>
                     </figure>
-                    <figure class ="w-full aspect-mn relative sm:aspect-auto">
+                    <figure class ="group w-full aspect-mn relative sm:aspect-auto sm:cursor-pointer">
                         <picture>
                             <source media ="(min-width: 900px)" srcset ="./src/assets/desktop/pocket-borealis.jpg">
-                            <img class ="h-full xl:w-full" src ="./src/assets/mobile/pocket-borealis.jpg" alt ="picture">
+                            <img class ="h-full group-hover:opacity-30 xl:w-full" src ="./src/assets/mobile/pocket-borealis.jpg" alt ="picture" loading ="lazy" draggable ="false">
                         </picture>
-                        <figcaption class ="w-14 text-white text-lg uppercase absolute bottom-1 left-2">pocket borealis</figcaption>
+                        <figcaption class ="w-14 text-white text-lg uppercase absolute bottom-1 left-2 group-hover:text-black group-hover:font-semibold">pocket borealis</figcaption>
                     </figure>
-                    <figure class ="w-full aspect-mn relative sm:aspect-auto">
+                    <figure class ="group w-full aspect-mn relative sm:aspect-auto sm:cursor-pointer">
                         <picture>
                             <source media ="(min-width: 900px)" srcset ="./src/assets/desktop/curiosity.jpg">
-                            <img class ="h-full xl:w-full" src ="./src/assets/mobile/curiosity.jpg" alt ="picture">
+                            <img class ="h-full group-hover:opacity-30 xl:w-full" src ="./src/assets/mobile/curiosity.jpg" alt ="picture" loading ="lazy" draggable ="false">
                         </picture>
-                        <figcaption class ="w-14 text-white text-lg uppercase absolute bottom-1 left-2">the curiosity</figcaption>
+                        <figcaption class ="w-14 text-white text-lg uppercase absolute bottom-1 left-2 group-hover:text-black group-hover:font-semibold">the curiosity</figcaption>
                     </figure>
-                    <figure class ="w-full aspect-mn relative sm:aspect-auto">
+                    <figure class ="group w-full aspect-mn relative sm:aspect-auto sm:cursor-pointer">
                         <picture>
                             <source media ="(min-width: 900px)" srcset ="./src/assets/desktop/fisheye.jpg">
-                            <img class ="h-full xl:w-full" src ="./src/assets/mobile/fisheye.jpg" alt ="picture">
+                            <img class ="h-full group-hover:opacity-30 xl:w-full" src ="./src/assets/mobile/fisheye.jpg" alt ="picture" loading ="lazy" draggable ="false">
                         </picture>
-                        <figcaption class ="w-14 text-white text-lg uppercase absolute bottom-1 left-2">make it fisheye</figcaption>
+                        <figcaption class ="w-14 text-white text-lg uppercase absolute bottom-1 left-2 group-hover:text-black group-hover:font-semibold">make it fisheye</figcaption>
                     </figure> 
                 </section>
-                <button class ="w-[12rem] h-4 mx-auto mt-3 mb-8 b-full sm:m-0 sm:order-1 sm:ml-auto">see all</button>
+                <button class ="group w-[12rem] h-4 mx-auto mt-3 mb-8 b-full relative overflow-hidden bg-white sm:m-0 sm:order-1 sm:ml-auto">
+                    see all
+                    <span class ="w-full h-full absolute top-0 left-0 translate-x-[-12rem] skew-x-[45deg] scale-x-0 duration-1000 mix-blend-difference bg-white
+                                  group-hover:scale-x-100 group-hover:translate-x-0 group-hover:skew-x-0 group-hover:duration-700">
+                    </span>
+                </button>
             </section>
         </main>
 
         <footer class ="py-6 bg-black sm:py-5">
             <section class ="w-90 mx-auto flex items-center flex-col gap-y-5 sm:w-85 sm:grid sm:grid-cols-2 sm:gap-y-2">
-                <img src ="./src/assets/logo.svg" alt ="icon logo">
+                <img src ="./src/assets/logo.svg" alt ="icon logo" loading ="lazy" draggable ="false">
                 <ul class ="flex flex-col gap-y-2 sm:flex sm:items-center sm:flex-row sm:order-2 sm:gap-x-2">
-                    <li><a class ="text-white text-md font-semibold" href ="#">About</a></li>
-                    <li><a class ="text-white text-md font-semibold" href ="#">Careers</a></li>
-                    <li><a class ="text-white text-md font-semibold" href ="#">Events</a></li>
-                    <li><a class ="text-white text-md font-semibold" href ="#">Products</a></li>
-                    <li><a class ="text-white text-md font-semibold" href ="#">Support</a></li>
+                    <li><a class ="text-white text-md font-semibold relative 
+                                    after:content-[''] after:w-0 after:h-0.2 after:absolute after:bottom-0.5 after:left-0 after:transition-all after:ease-linear after:duration-500 after:bg-white hover:after:w-full" href ="#">About</a></li>
+                    <li><a class ="text-white text-md font-semibold relative 
+                                    after:content-[''] after:w-0 after:h-0.2 after:absolute after:bottom-0.5 after:left-0 after:transition-all after:ease-linear after:duration-500 after:bg-white hover:after:w-full" href ="#">Careers</a></li>
+                    <li><a class ="text-white text-md font-semibold relative 
+                                    after:content-[''] after:w-0 after:h-0.2 after:absolute after:bottom-0.5 after:left-0 after:transition-all after:ease-linear after:duration-500 after:bg-white hover:after:w-full" href ="#">Events</a></li>
+                    <li><a class ="text-white text-md font-semibold relative 
+                                    after:content-[''] after:w-0 after:h-0.2 after:absolute after:bottom-0.5 after:left-0 after:transition-all after:ease-linear after:duration-500 after:bg-white hover:after:w-full" href ="#">Products</a></li>
+                    <li><a class ="text-white text-md font-semibold relative 
+                                    after:content-[''] after:w-0 after:h-0.2 after:absolute after:bottom-0.5 after:left-0 after:transition-all after:ease-linear after:duration-500 after:bg-white hover:after:w-full" href ="#">Support</a></li>
                 </ul>
-                <figure class ="flex items-center justify-center gap-x-1 sm:justify-self-end">
-                    <img src ="./src/assets/facebook.svg" alt ="ico company" loading ="lazy" draggable ="false">
-                    <img src ="./src/assets/twitter.svg" alt ="ico company" loading ="lazy" draggable ="false">
-                    <img src ="./src/assets/pinterest.svg" alt ="ico company" loading ="lazy" draggable ="false">
-                    <img src ="./src/assets/instagram.svg" alt ="ico company" loading ="lazy" draggable ="false">
+                <figure class ="flex items-center justify-center gap-x-2 sm:justify-self-end">
+                    <figure class ="relative after:content-[''] after:w-full after:h-0.2 after:absolute after:bottom-0.5 after:left-0 after:scale-x-0 after:transition-all after:duration-500 after:bg-white hover:after:scale-x-100">
+                        <img class ="cursor-pointer" src ="./src/assets/facebook.svg" alt ="ico company" loading ="lazy" draggable ="false">
+                    </figure>        
+                    <figure class ="relative after:content-[''] after:w-full after:h-0.2 after:absolute after:bottom-0.5 after:left-0 after:scale-x-0 after:transition-all after:duration-500 after:bg-white hover:after:scale-x-100">
+                        <img class ="cursor-pointer" src ="./src/assets/twitter.svg" alt ="ico company" loading ="lazy" draggable ="false">
+                    </figure>
+                    <figure class ="relative after:content-[''] after:w-full after:h-0.2 after:absolute after:bottom-0.5 after:left-0 after:scale-x-0 after:transition-all after:duration-500 after:bg-white hover:after:scale-x-100">
+                        <img class ="cursor-pointer" src ="./src/assets/pinterest.svg" alt ="ico company" loading ="lazy" draggable ="false">
+                    </figure>
+                    <figure class ="relative after:content-[''] after:w-full after:h-0.2 after:absolute after:bottom-0.5 after:left-0 after:scale-x-0 after:transition-all after:duration-500 after:bg-white hover:after:scale-x-100">
+                        <img class ="cursor-pointer" src ="./src/assets/instagram.svg" alt ="ico company" loading ="lazy" draggable ="false">
+                    </figure>
                 </figure>
                 <p class ="text-white text-sm font-alata sm:order-2 sm:justify-self-end">© 2021 Loopstudios. All rights reserved.</p>
             </section>

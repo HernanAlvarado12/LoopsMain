@@ -25,7 +25,8 @@ module.exports = {
         '90': '90%'
       },
       height: {
-        'nav': 'calc(100% - 9rem)'
+        'nav': 'calc(100% - 9rem)',
+        '0.2': '0.2rem'
       },
       maxHeight: {
         '80': '80vh'
@@ -35,6 +36,9 @@ module.exports = {
       },
       order: {
         '1': '-1'
+      },
+      inset: {
+        '0.5': '-1rem'
       },
       fontSize: {
         'xs': '1.2rem',
