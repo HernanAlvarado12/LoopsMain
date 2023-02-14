@@ -746,7 +746,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .bg-header {
-  background-image: url('/src/assets/hero.jpg');
+  background-image: url('../assets/hero.jpg');
 }
 
 .bg-cover {
@@ -1126,7 +1126,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .sm\:bg-header-sm {
-    background-image: url('/src/assets/desktop/hero.jpg');
+    background-image: url('../assets/desktop/hero.jpg');
   }
 
   .sm\:p-4 {
