@@ -16,7 +16,9 @@ module.exports = {
         '5': '5rem',
         '6': '6rem',
         '8': '8rem',
+        '9': '9rem',
         '10': '10rem',
+        '14': '14rem',
         '50': '50%',
         '85': '85%',
         '90': '90%'
@@ -30,7 +32,7 @@ module.exports = {
         'md': '1.8rem',
         'lg': '2.4rem',
         'base': '3.2rem',
-        'xl': '4.2rem'
+        'xl': '4rem'
       },
       borderRadius: {
         'sm': '0.6rem',
@@ -40,11 +42,19 @@ module.exports = {
       letterSpacing: {
         'widest': '0.3rem'
       },
-      backgroundColor: {
-        'gray': {
+      aspectRatio: {
+        'nav': '7/8',
+        'mn': '21/9'
+      },
+      colors: {
+        gray: {
           DEFAULT: 'hsl(0, 0%, 55%)',
           '100': 'hsl(0, 0%, 41%)'
         }
+      },
+      backgroundImage: {
+        'header': "url('/src/assets/mobile/hero.jpg')",
+        'header-sm': "url('/src/assets/desktop/hero.jpg')"
       }
     },
   },

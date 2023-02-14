@@ -16,3 +16,9 @@
         font-family: 'Josefin Sans', sans-serif;
     }
 }
+
+@layer utilities {
+    .b-full {
+        @apply block text-black text-xs font-alata font-semibold tracking-widest uppercase border border-solid border-black;
+    }
+}
