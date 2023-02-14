@@ -23,6 +23,12 @@ module.exports = {
         '85': '85%',
         '90': '90%'
       },
+      height: {
+        'nav': 'calc(100% - 9rem)'
+      },
+      maxHeight: {
+        '80': '80vh'
+      },
       fontFamily: {
         alata: "'Alata', sans-serif"
       },

@@ -24,12 +24,14 @@
     <body>
         
         <header>
-            <nav class ="w-full aspect-nav relative bg-header bg-no-repeat">
+            <nav class ="w-full max-h-80 flex flex-col aspect-nav relative bg-header bg-cover bg-no-repeat">
                 <figure class ="w-90 h-9 mx-auto flex items-center justify-between">
                     <img src ="./src/assets/logo.svg" alt ="icon logo">
-                    <img src ="./src/assets/hamburger.svg" alt ="icon menu">
+                    <img class ="sm:hidden" src ="./src/assets/hamburger.svg" alt ="icon menu">
                 </figure>
-                <h1 class ="w-min absolute text-white text-xl uppercase border border-white">Immersive experiences that deliver</h1>
+                <div class ="h-nav grid place-content-center">
+                    <h1 class ="w-[33rem] py-2 px-3 text-white text-xl uppercase border border-white">Immersive experiences that deliver</h1>
+                </div>
             </nav>
         </header>
 
