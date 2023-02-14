@@ -746,7 +746,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .bg-header {
-  background-image: url('./src/assets/mobile/hero.jpg');
+  background-image: url('./src/assets/hero.jpg');
 }
 
 .bg-cover {

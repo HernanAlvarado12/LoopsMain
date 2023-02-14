@@ -70,7 +70,7 @@ module.exports = {
         }
       },
       backgroundImage: {
-        'header': "url('./src/assets/mobile/hero.jpg')",
+        'header': "url('./src/assets/hero.jpg')",
         'header-sm': "url('./src/assets/desktop/hero.jpg')"
       }
     },
