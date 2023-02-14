@@ -20,6 +20,7 @@ module.exports = {
         '10': '10rem',
         '14': '14rem',
         '50': '50%',
+        '80': '80%',
         '85': '85%',
         '90': '90%'
       },
@@ -31,6 +32,9 @@ module.exports = {
       },
       fontFamily: {
         alata: "'Alata', sans-serif"
+      },
+      order: {
+        '1': '-1'
       },
       fontSize: {
         'xs': '1.2rem',
@@ -51,6 +55,9 @@ module.exports = {
       aspectRatio: {
         'nav': '7/8',
         'mn': '21/9'
+      },
+      boxShadow: {
+        'sm': '0.4rem 0.5rem 1rem hsl(0, 0%, 72%)'
       },
       colors: {
         gray: {

@@ -1,5 +1,4 @@
 @tailwind base;
-@tailwind variants;
 @tailwind utilities;
 @tailwind components;
 
@@ -17,7 +16,7 @@
     }
 
     body::-webkit-scrollbar {
-        width: 1rem;
+        width: 0.7rem;
     }
 
     body::-webkit-scrollbar-track-piece {
@@ -26,12 +25,16 @@
 
     body::-webkit-scrollbar-thumb {
         border-radius: 1rem;
-        background-color: hsl(0, 0%, 41%);
+        background-color: black;
     }
 }
 
 @layer utilities {
     .b-full {
         @apply block text-black text-xs font-alata font-semibold tracking-widest uppercase border border-solid border-black;
+    }
+    
+    .t-sm {
+        @apply  w-[38rem] py-3 px-4 border-2;
     }
 }
